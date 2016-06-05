@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Puzzle" Height="541" Width="899">
+    <Grid Name="Grid1">
+        <Rectangle Height="434" HorizontalAlignment="Left" Margin="12,12,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="689" Fill="BlanchedAlmond"/>
+        <Button Content="Browse" Height="23" HorizontalAlignment="Left" Margin="342,454,0,0" Name="Browser" VerticalAlignment="Top" Width="75" Click="Browser_Click" />
+        <Label Content="Image" Height="31" HorizontalAlignment="Left" Margin="25,452,0,0" Name="label1" VerticalAlignment="Top" Width="71" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,455,551,0" Name="textBox1" VerticalAlignment="Top" Width="245" />
+        <Rectangle Height="153" HorizontalAlignment="Left" Margin="721,12,0,0" Name="rectangle2" Stroke="Black" VerticalAlignment="Top" Width="144" Fill="Gray"/>
+        <Image Height="153" HorizontalAlignment="Left" Margin="721,12,0,0" Name="Preview" Stretch="Fill" VerticalAlignment="Top" Width="144" />
+        <CheckBox Content="Display Preview" Height="16" HorizontalAlignment="Left" Margin="748,171,0,0" Name="checkBox1" VerticalAlignment="Top" Checked="checkBox1_Checked" Unchecked="checkBox1_Unchecked" IsChecked="True"/>
+        <GroupBox Header="Size" Height="129" HorizontalAlignment="Left" Margin="732,217,0,0" Name="groupBox1" VerticalAlignment="Top" Width="126">
+            <Grid Width="104">
+                <RadioButton Content="4x4" Height="16" HorizontalAlignment="Left" Margin="25,6,0,0" Name="radioButton1" VerticalAlignment="Top" IsChecked="True"/>
+                <RadioButton Content="6x6" Height="16" HorizontalAlignment="Left" Margin="25,28,0,0" Name="radioButton2" VerticalAlignment="Top" />
+                <RadioButton Content="8x8" Height="16" HorizontalAlignment="Left" Margin="25,50,0,0" Name="radioButton3" VerticalAlignment="Top" />
+                <Button Content="Cut" Height="23" HorizontalAlignment="Left" Margin="10,72,0,0" Name="Cutter" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="Cutter_Click" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
